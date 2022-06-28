@@ -13,7 +13,7 @@ jobs:
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token:  ${{ secrets.GIT_PAT }} # https://stackoverflow.com/questions/69063452/github-actions-on-release-created-workflow-trigger-not-working
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
