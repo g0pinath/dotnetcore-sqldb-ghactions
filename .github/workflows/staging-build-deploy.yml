@@ -5,6 +5,8 @@ on:
     # Pattern matched against refs/tags
     tags:        
       - '*'  
+    release:
+      types: [created]    
 
 env:
   AZURE_WEBAPP_NAME: demo-ais    # set this to your application's name
